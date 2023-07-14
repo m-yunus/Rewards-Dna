@@ -12,16 +12,17 @@
 
     body {
       font-family: Arial, sans-serif;
-     
+      height: 100%;
     }
 
     .container {
       display: flex;
-    
+      height: 100vh;
+      overflow: hidden; /* Prevent vertical scroll */
     }
 
     .sidebar {
-      width: 15%;
+      width: 16%;
       background-color: hwb(182 82% 7% / 0.544);
       padding: 20px;
     }
@@ -51,7 +52,7 @@
     }
 
     .box h1 {
-      font-size: 40px;;
+      font-size: 24px;
     }
 
     .box p {
@@ -105,9 +106,9 @@
     }
 
     .content {
-      /* Existing styles for the content container */
-      width: 100%;
-      position: relative;
+      width: 84%;
+      height: 100%;
+      overflow-y: auto; /* Add vertical scroll if necessary */
     }
 
     .header {
@@ -119,12 +120,11 @@
 
     .left-section {
       flex-grow: 1;
-      
     }
-    .sub-heading{
-      display: flex;
-      gap: 10px;
-    }
+.sub-heading{
+  display: flex;
+  gap: 10px;
+}
     .left-section h1 {
       font-size: 35px;
       color: #007c84;
@@ -317,7 +317,7 @@
           </div>
         </div>
         <div class="secondbox">
-          <div class="third" >
+          <div class="third">
             <div class="rightbox">
               <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
                 alt="Image 1">
@@ -342,7 +342,6 @@
             </div>
           </div>
         </div>
-        <!-- Add more box elements as needed -->
       </div>
     </div>
   </div>
