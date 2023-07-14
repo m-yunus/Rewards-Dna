@@ -17,16 +17,13 @@
 
     .container {
       display: flex;
-   height: 100vh;
- 
+      height: 100vh;
     }
 
     .sidebar {
       width: 16%;
       background-color: hwb(182 82% 7% / 0.544);
       padding: 20px;
-
-
     }
 
     .logo {
@@ -47,11 +44,8 @@
       background-color: #fff;
       border-radius: 15px;
       display: flex;
-
       gap: 18px;
       padding: 15px 0px 15px 8px;
-      ;
-
       flex-direction: column;
       border: 1px solid #007c84;
     }
@@ -67,7 +61,6 @@
     .demo-button {
       width: 100%;
       background-color: #007c84;
-
       padding: 20px;
       border-radius: 5px;
       text-align: center;
@@ -95,8 +88,6 @@
 
     .mail {
       display: flex;
-
-
       gap: 10px;
       margin-top: 20px;
       align-items: center;
@@ -116,6 +107,7 @@
     .content {
       /* Existing styles for the content container */
       width: 100%;
+      position: relative;
     }
 
     .header {
@@ -139,7 +131,6 @@
       height: 1px;
       background-color: #007c84;
       margin: 10px 0;
-
     }
 
     .left-section h6 {
@@ -156,62 +147,54 @@
       object-fit: cover;
     }
 
-    .sub-heading {
+    .masonry {
       display: flex;
-      align-items: center;
-      gap: 6px;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0px 60px;
     }
 
-    .content {
-  /* Existing styles for the content container */
-}
+    .rightbox {
+      width: 100%;
+      max-width: 300px;
+    
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      position: relative;
+    }
 
-.masonry {
-  display: flex;
-  /* flex-wrap: wrap;
-  min-height: 400px; */
-  gap: 30px;
- /* justify-content: space-between; */
-  padding: 0px 40px;
- 
-}
+    .rightbox img {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
 
-.rightbox {
-  width: 300px;
-  
-  
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  border-radius: 15px;
-}
+    .box-content {
+      height: 50%;
+      padding: 10px;
+    }
 
-.rightbox img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
+    .box-content h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
 
-.box-content {
-  height: 50%;
-  padding: 10px;
-}
+    .box-content p {
+      font-size: 14px;
+    }
 
-.box-content h2 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.box-content p {
-  font-size: 14px;
-}
 .first{
-  padding-top: 80px;
+  position: relative;
+  padding-top: 100px;
 }
-.fifth{
-  padding-left: 180px;
+.third{
+  position: relative;
+  left: 80px;
+  bottom: 20px;
 }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -220,24 +203,22 @@
 <body>
   <div class="container">
     <div class="sidebar">
-
       <div class="boxes">
         <div class="box">
           <h1>01</h1>
-          <p> <strong>GO LIVE NOW</strong> </p>
+          <p><strong>GO LIVE NOW</strong></p>
         </div>
         <div class="box">
           <h1>02</h1>
-          <p><strong>MAKE AN IMPACT!</strong> </p>
+          <p><strong>MAKE AN IMPACT!</strong></p>
         </div>
         <div class="box">
           <h1>03</h1>
-          <p><strong> BE ON BUDGET!</strong></p>
+          <p><strong>BE ON BUDGET!</strong></p>
         </div>
-
       </div>
       <div class="demo-button">
-        <a>Demo </a> <i class="fal fa-greater-than"></i>
+        <a>Demo</a> <i class="fal fa-greater-than"></i>
       </div>
       <div class="demo-button">
         White Label
@@ -254,9 +235,6 @@
       </div>
     </div>
     <div class="content">
-
-
-
       <div class="header">
         <div class="left-section">
           <h1>Compensation Tools</h1>
@@ -264,70 +242,78 @@
             <div class="line"></div>
             <h6>For the Rest of Us!</h6>
           </div>
-
         </div>
         <div class="right-section">
           <img src="logo.png" alt="Logo">
         </div>
       </div>
       <div class="masonry">
-        <div class="first" >
+        <div class="first">
           <div class="rightbox">
-            
-            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
             <div class="box-content">
               <h2>JD Manager</h2>
-              <p>Create precise job descriptions instantly with JD Manager. Achieve business alignment and buy-in through collaborative processes. Easily track, update, allocate, and share job descriptions, while also keeping track of revisions. Strengthen various HR programs, from recruitment to right-sizing initiatives.
+              <p>Create precise job descriptions instantly with JD Manager. Achieve business alignment and buy-in through collaborative processes. Easily track,
+                update, allocate, and share job descriptions, while also keeping track of revisions. Strengthen various HR programs, from recruitment
+                to right-sizing initiatives.
               </p>
             </div>
           </div>
         </div>
-       
         <div class="secondbox">
           <div class="rightbox" style="margin-left: 70px;">
-            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
             <div class="box-content">
               <h2>JE Manager</h2>
-              <p>Streamline job leveling and grading with JE Manager. Build a fair and defensible job hierarchy while collaborating with business leaders for objectivity and buy-in. This tool can manage various job evaluation methodologies, including classification and point factor methods. Gain insights into job size, grades, bands, and career architecture.
+              <p>Streamline job leveling and grading with JE Manager. Build a fair and defensible job hierarchy while collaborating with business leaders for
+                objectivity and buy-in. This tool can manage various job evaluation methodologies, including classification and point factor methods.
+                Gain insights into job size, grades, bands, and career architecture.
               </p>
             </div>
           </div>
           <div class="rightbox">
-            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
             <div class="box-content">
               <h2>Comp 360</h2>
-              <p>Effortlessly manage merit cycles with Comp360. This tool allows you to build budget scenarios, obtain merit recommendations, and issue stunning total rewards statements. Run high-impact merit cycles, reward performance, address pay gaps, analyze key metrics, engage, and stay within the budget.
+              <p>Effortlessly manage merit cycles with Comp360. This tool allows you to build budget scenarios, obtain merit recommendations, and issue stunning
+                total rewards statements. Run high-impact merit cycles, reward performance, address pay gaps, analyze key metrics, engage, and stay
+                within the budget.
               </p>
             </div>
           </div>
         </div>
         <div class="secondbox">
-          <div class="third" style="margin-top: -23px;">
-            <div class="rightbox" >
-              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+          <div class="third" >
+            <div class="rightbox">
+              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+                alt="Image 1">
               <div class="box-content">
                 <h2>Nudge</h2>
-                <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging insights from behavioral sciences, Nudge helps you create effective incentive plans, communicate them with impact, and drive better outcomes. Consistently engage your team, and supervisors can manage team performance with real-time actionable insights</p>
+                <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging insights from behavioral sciences, Nudge helps
+                  you create effective incentive plans, communicate them with impact, and drive better outcomes. Consistently engage your team, and
+                  supervisors can manage team performance with real-time actionable insights</p>
               </div>
             </div>
           </div>
           <div class="fifth">
             <div class="rightbox">
-              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+                alt="Image 1">
               <div class="box-content">
                 <h2>Advantage</h2>
-                <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively communicates your Employee Value Proposition to candidates and employees through visually appealing and impactful total rewards statements. It covers every HR program, from base pay to equity to benefits and enhances offer acceptance and employee retention</p>
+                <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively communicates your Employee Value Proposition
+                  to candidates and employees through visually appealing and impactful total rewards statements. It covers every HR program, from base
+                  pay to equity to benefits and enhances offer acceptance and employee retention</p>
               </div>
             </div>
           </div>
-         
         </div>
-       
         <!-- Add more box elements as needed -->
       </div>
-      
-    <!-- Rest of your content goes here -->
-  </div>
+    </div>
   </div>
 </body>
 
