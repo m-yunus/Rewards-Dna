@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Responsive Design with Sidebar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+   
+  height: 100vh;
+    }
+
+    .sidebar {
+      width: 14%;
+      background-color: hwb(182 82% 7% / 0.544);
+      padding: 20px;
+
+
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .box {
+      height: 100px;
+      margin-bottom: 35px;
+      background-color: #fff;
+      border-radius: 15px;
+      display: flex;
+
+      gap: 18px;
+      padding: 15px 0px 15px 8px;
+      ;
+
+      flex-direction: column;
+      border: 1px solid #007c84;
+    }
+
+    .box h1 {
+      font-size: 24px;
+    }
+
+    .box p {
+      color: #007c84;
+    }
+
+    .demo-button {
+      width: 100%;
+      background-color: #007c84;
+
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .demo-button i {
+      margin-left: 5px;
+    }
+
+    .demo-icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .demo-icons i {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .mail {
+      display: flex;
+
+
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .mail i {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .mail a {
+      color: #007c84;
+      text-decoration: none;
+    }
+
+    .content {
+      /* Existing styles for the content container */
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .left-section {
+      flex-grow: 1;
+    }
+
+    .left-section h1 {
+      font-size: 35px;
+      color: #007c84;
+    }
+
+    .left-section .line {
+      width: 208px;
+      height: 1px;
+      background-color: #007c84;
+      margin: 10px 0;
+
+    }
+
+    .left-section h6 {
+      font-size: 14px;
+      color: #007c84;
+    }
+
+    .right-section {
+      justify-content: space-around;
+    }
+
+    .right-section img {
+      height: 70px;
+      object-fit: cover;
+    }
+
+    .sub-heading {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .content {
+  /* Existing styles for the content container */
+}
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+  gap: 50px;
+ 
+  padding: 50px 30px;
+  justify-content: center;
+}
+
+.rightbox {
+  width: 300px;
+  height: 450px;
+  
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.rightbox img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.box-content {
+  height: 50%;
+  padding: 20px;
+}
+
+.box-content h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.box-content p {
+  font-size: 14px;
+}
+.first{
+  padding-top: 140px;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+
+      <div class="boxes">
+        <div class="box">
+          <h1>01</h1>
+          <p> <strong>GO LIVE NOW</strong> </p>
+        </div>
+        <div class="box">
+          <h1>02</h1>
+          <p><strong>MAKE AN IMPACT!</strong> </p>
+        </div>
+        <div class="box">
+          <h1>03</h1>
+          <p><strong> BE ON BUDGET!</strong></p>
+        </div>
+
+      </div>
+      <div class="demo-button">
+        <a>Demo </a> <i class="fal fa-greater-than"></i>
+      </div>
+      <div class="demo-button">
+        White Label
+      </div>
+      <div class="mail">
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:hello@rewarsdna.com">hello@rewarsdna.com</a>
+      </div>
+      <div class="demo-icons">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-thumbs-up"></i>
+        <i class="fa fa-smile-o"></i>
+      </div>
+    </div>
+    <div class="content">
+
+
+
+      <div class="header">
+        <div class="left-section">
+          <h1>Compensation Tools</h1>
+          <div class="sub-heading">
+            <div class="line"></div>
+            <h6>For the Rest of Us!</h6>
+          </div>
+
+        </div>
+        <div class="right-section">
+          <img src="logo.png" alt="Logo">
+        </div>
+      </div>
+      <div class="masonry">
+        <div class="first" >
+          <div class="rightbox">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <div class="box-content">
+              <h2>JD Manager</h2>
+              <p>Create precise job descriptions instantly with JD Manager. Achieve business alignment and buy-in through collaborative processes. Easily track, update, allocate, and share job descriptions, while also keeping track of revisions. Strengthen various HR programs, from recruitment to right-sizing initiatives.
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        <div class="secondbox">
+          <div class="rightbox" style="margin-left: 70px;">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <div class="box-content">
+              <h2>JE Manager</h2>
+              <p>Streamline job leveling and grading with JE Manager. Build a fair and defensible job hierarchy while collaborating with business leaders for objectivity and buy-in. This tool can manage various job evaluation methodologies, including classification and point factor methods. Gain insights into job size, grades, bands, and career architecture.
+              </p>
+            </div>
+          </div>
+          <div class="rightbox">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <div class="box-content">
+              <h2>Comp 360</h2>
+              <p>Effortlessly manage merit cycles with Comp360. This tool allows you to build budget scenarios, obtain merit recommendations, and issue stunning total rewards statements. Run high-impact merit cycles, reward performance, address pay gaps, analyze key metrics, engage, and stay within the budget.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="secondbox">
+          <div class="rightbox">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <div class="box-content">
+              <h2>Nudge</h2>
+              <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging insights from behavioral sciences, Nudge helps you create effective incentive plans, communicate them with impact, and drive better outcomes. Consistently engage your team, and supervisors can manage team performance with real-time actionable insights</p>
+            </div>
+          </div>
+          <div class="rightbox">
+            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+            <div class="box-content">
+              <h2>Advantage</h2>
+              <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively communicates your Employee Value Proposition to candidates and employees through visually appealing and impactful total rewards statements. It covers every HR program, from base pay to equity to benefits and enhances offer acceptance and employee retention</p>
+            </div>
+          </div>
+        </div>
+       
+        <!-- Add more box elements as needed -->
+      </div>
+      
+    <!-- Rest of your content goes here -->
+  </div>
+  </div>
+</body>
+
+</html>
