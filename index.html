@@ -17,7 +17,7 @@
 
     .container {
       display: flex;
-   
+   height: 100vh;
  
     }
 
@@ -122,7 +122,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 10px 40px;
     }
 
     .left-section {
@@ -172,13 +172,13 @@
   min-height: 400px;
   gap: 50px;
  
-  padding: 50px 30px;
-  justify-content: center;
+  padding: 0px 70px;
+ 
 }
 
 .rightbox {
   width: 300px;
-  height: 450px;
+  
   
   border: 1px solid #ccc;
   margin-bottom: 20px;
@@ -186,15 +186,17 @@
 }
 
 .rightbox img {
-  height: 50%;
+  height: 150px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .box-content {
   height: 50%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .box-content h2 {
@@ -206,9 +208,11 @@
   font-size: 14px;
 }
 .first{
-  padding-top: 140px;
+  padding-top: 80px;
 }
-
+.fifth{
+  padding-left: 180px;
+}
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -269,6 +273,7 @@
       <div class="masonry">
         <div class="first" >
           <div class="rightbox">
+            
             <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
             <div class="box-content">
               <h2>JD Manager</h2>
@@ -297,20 +302,25 @@
           </div>
         </div>
         <div class="secondbox">
-          <div class="rightbox">
-            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
-            <div class="box-content">
-              <h2>Nudge</h2>
-              <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging insights from behavioral sciences, Nudge helps you create effective incentive plans, communicate them with impact, and drive better outcomes. Consistently engage your team, and supervisors can manage team performance with real-time actionable insights</p>
+          <div class="third" style="margin-top: -23px;">
+            <div class="rightbox" >
+              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+              <div class="box-content">
+                <h2>Nudge</h2>
+                <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging insights from behavioral sciences, Nudge helps you create effective incentive plans, communicate them with impact, and drive better outcomes. Consistently engage your team, and supervisors can manage team performance with real-time actionable insights</p>
+              </div>
             </div>
           </div>
-          <div class="rightbox">
-            <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
-            <div class="box-content">
-              <h2>Advantage</h2>
-              <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively communicates your Employee Value Proposition to candidates and employees through visually appealing and impactful total rewards statements. It covers every HR program, from base pay to equity to benefits and enhances offer acceptance and employee retention</p>
+          <div class="fifth">
+            <div class="rightbox">
+              <img src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg" alt="Image 1">
+              <div class="box-content">
+                <h2>Advantage</h2>
+                <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively communicates your Employee Value Proposition to candidates and employees through visually appealing and impactful total rewards statements. It covers every HR program, from base pay to equity to benefits and enhances offer acceptance and employee retention</p>
+              </div>
             </div>
           </div>
+         
         </div>
        
         <!-- Add more box elements as needed -->
