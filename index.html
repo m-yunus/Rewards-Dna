@@ -23,14 +23,18 @@
     }
 
     .sidebar {
-      min-width: 240px;
-   ;
+      min-width: 240px;;
       padding: 20px;
-     min-height: 100vh;
-     background:  #EAF3F4;
-box-shadow: 6px 6px 40px 0px rgba(0, 118, 135, 0.10), 4px 4px 10px 0px rgba(0, 118, 135, 0.05);
+      min-height: 100vh;
+     
+      border-radius: 20px 12px 12px 20px;
+background:  #EAF3F4;
+box-shadow: 6px 6px 40px 0px rgb(0 118 135 / 19%), 4px 4px 10px 0px rgba(0, 118, 135, 0.05);
 
-      
+display: flex;
+flex-direction: column;
+
+justify-content: space-evenly;
     }
 
     .logo {
@@ -42,22 +46,22 @@ box-shadow: 6px 6px 40px 0px rgba(0, 118, 135, 0.10), 4px 4px 10px 0px rgba(0, 1
       flex-direction: column;
       width: 100%;
       padding-top: 14px;
-    
+
     }
 
     .box {
       height: 100px;
       margin-bottom: 35px;
-      
+
       border-radius: 12px;
       display: flex;
       gap: 18px;
       padding: 15px 0px 15px 8px;
       flex-direction: column;
       border: 1px solid #007c84;
-     
 
-background: rgba(255, 255, 255, 0.40);
+
+      background: rgba(255, 255, 255, 0.40);
 
     }
 
@@ -72,7 +76,7 @@ background: rgba(255, 255, 255, 0.40);
     .demo-button {
 
       width: 100%;
-     
+
       padding: 20px;
       border-radius: 5px;
       text-align: center;
@@ -84,9 +88,9 @@ background: rgba(255, 255, 255, 0.40);
       justify-content: space-around;
       align-items: center;
       border-radius: 12px;
-background:  #007C84;
-/* Shadow 01 */
-box-shadow: 0px 0.5152338743209839px 12.122506141662598px 0px rgba(0, 124, 132, 0.04), 0px 1.3030651807785034px 21.820842742919922px 0px rgba(0, 124, 132, 0.06), 0px 2.658130645751953px 30.16338348388672px 0px rgba(0, 124, 132, 0.07), 0px 5.475246906280518px 40.91319274902344px 0px rgba(0, 124, 132, 0.09), 0px 15px 80px 0px rgba(0, 124, 132, 0.13);
+      background: #007C84;
+      /* Shadow 01 */
+      box-shadow: 0px 0.5152338743209839px 12.122506141662598px 0px rgba(0, 124, 132, 0.04), 0px 1.3030651807785034px 21.820842742919922px 0px rgba(0, 124, 132, 0.06), 0px 2.658130645751953px 30.16338348388672px 0px rgba(0, 124, 132, 0.07), 0px 5.475246906280518px 40.91319274902344px 0px rgba(0, 124, 132, 0.09), 0px 15px 80px 0px rgba(0, 124, 132, 0.13);
 
 
     }
@@ -116,9 +120,9 @@ box-shadow: 0px 0.5152338743209839px 12.122506141662598px 0px rgba(0, 124, 132, 
 
     .mail span {
       border-radius: 50%;
-background:  #F5FAFA;
-padding: 5px;
- 
+      background: #F5FAFA;
+      padding: 5px;
+
     }
 
     .mail a {
@@ -129,7 +133,7 @@ padding: 5px;
     .content {
       width: 100%;
       height: 100%;
-      
+
     }
 
     .header {
@@ -137,7 +141,7 @@ padding: 5px;
       justify-content: space-between;
       align-items: center;
       padding: 10px 40px;
-    
+
       width: 100%;
     }
 
@@ -165,7 +169,7 @@ padding: 5px;
     .left-section h6 {
       font-size: 14px;
       color: #007c84;
-      
+
     }
 
     .right-section {
@@ -188,12 +192,12 @@ padding: 5px;
 
     .rightbox {
       width: 300px;
-     
+
       margin-bottom: 20px;
-     
+
       border-radius: 16px;
-background: #FFF;
-box-shadow: 0px 1px 8px 0px rgb(89 89 89 / 21%);
+      background: #FFF;
+      box-shadow: 0px 1px 8px 0px rgb(89 89 89 / 21%);
     }
 
     .rightbox img {
@@ -212,25 +216,26 @@ box-shadow: 0px 1px 8px 0px rgb(89 89 89 / 21%);
 
     .box-content h2 {
       color: #038B94;
-text-align: justify;
-padding: 5px 15px ;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 100% */
+      text-align: justify;
+      padding: 5px 15px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      /* 100% */
     }
 
     .box-content p {
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
-     
+
     }
 
     .first {
-     height: 100%;
+      height: 100%;
       display: flex;
-     
+
       bottom: 40px;
     }
 
@@ -243,13 +248,15 @@ line-height: 20px; /* 100% */
       display: flex;
       flex-direction: column;
     }
-    .fifth{
-      
-  position: relative;
-  right: 45px;
-    
+
+    .fifth {
+
+      position: relative;
+      right: 45px;
+
 
     }
+
     /* #thirdcomp{
       position: relative;
       right: 60px;
@@ -261,24 +268,25 @@ line-height: 20px; /* 100% */
 
 <body>
   <div class="container">
-   
 
 
-      <div class="sidebar">
-        <div class="boxes">
-          <div class="box">
-            <h1>01</h1>
-            <p><strong>GO LIVE NOW</strong></p>
-          </div>
-          <div class="box">
-            <h1>02</h1>
-            <p><strong>MAKE AN IMPACT!</strong></p>
-          </div>
-          <div class="box">
-            <h1>03</h1>
-            <p><strong>BE ON BUDGET!</strong></p>
-          </div>
+
+    <div class="sidebar">
+      <div class="boxes">
+        <div class="box">
+          <h1>01</h1>
+          <p><strong>GO LIVE NOW</strong></p>
         </div>
+        <div class="box">
+          <h1>02</h1>
+          <p><strong>MAKE AN IMPACT!</strong></p>
+        </div>
+        <div class="box">
+          <h1>03</h1>
+          <p><strong>BE ON BUDGET!</strong></p>
+        </div>
+      </div>
+      <div class="button-container">
         <div class="demo-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
             <path
@@ -303,102 +311,105 @@ line-height: 20px; /* 100% */
               stroke-linejoin="round" />
           </svg></i>
         </div>
-        <div class="mail">
-          <span><img src="email.png" alt="" style="height: 12px;"></span>
-          <a href="mailto:hello@rewarsdna.com">hello@rewarsdna.com</a>
+      </div>
+      
+      
+      <div class="mail">
+        <span><img src="email.png" alt="" style="height: 12px;"></span>
+        <a href="mailto:hello@rewarsdna.com">hello@rewarsdna.com</a>
+      </div>
+      <div class="demo-icons">
+        <span><img src="address.png" alt="" style="height: 18px;"></span>
+        <span><img src="insurance.png" alt="" style="height: 18px;"></span>
+        <span><img src="info.png" alt="" style="height: 18px;"></span>
+        <span><img src="question.png" alt="" style="height: 18px;"></span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="header">
+        <div class="left-section">
+          <h1>Compensation Tools</h1>
+          <div class="sub-heading">
+            <div class="line"></div>
+            <h6>For the Rest of Us!</h6>
+          </div>
         </div>
-        <div class="demo-icons">
-          <span><img src="address.png" alt="" style="height: 18px;"></span>
-          <span><img src="insurance.png" alt="" style="height: 18px;"></span>
-          <span><img src="info.png" alt="" style="height: 18px;"></span>
-          <span><img src="question.png" alt="" style="height: 18px;"></span>
+        <div class="right-section">
+          <img src="logo.png" alt="Logo">
         </div>
       </div>
-      <div class="content">
-        <div class="header">
-          <div class="left-section">
-            <h1>Compensation Tools</h1>
-            <div class="sub-heading">
-              <div class="line"></div>
-              <h6>For the Rest of Us!</h6>
+      <div class="masonry">
+        <div class="first">
+          <div class="rightbox">
+            <img
+              src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
+            <div class="box-content">
+              <h2>JD Manager</h2>
+              <p>Create precise job descriptions instantly with JD Manager. Achieve business alignment and buy-in
+                through collaborative processes.
+
+              </p>
             </div>
           </div>
-          <div class="right-section">
-            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="secondbox">
+          <div class="rightbox" style="margin-left: 70px;">
+            <img
+              src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
+            <div class="box-content">
+              <h2>JE Manager</h2>
+              <p>Streamline job leveling and grading with JE Manager. Build a fair and defensible job hierarchy while
+                collaborating with business leaders for
+                .
+              </p>
+            </div>
+          </div>
+          <div class="rightbox" id="thirdcomp">
+            <img
+              src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
+              alt="Image 1">
+            <div class="box-content">
+              <h2>Comp 360</h2>
+              <p>Effortlessly manage merit cycles with Comp360. This tool allows you to build budget scenarios, obtain
+                merit recommendations, and issue stunning.
+
+              </p>
+            </div>
           </div>
         </div>
-        <div class="masonry">
-          <div class="first">
+        <div class="thirdbox">
+          <div class="third">
             <div class="rightbox">
               <img
                 src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
                 alt="Image 1">
               <div class="box-content">
-                <h2>JD Manager</h2>
-                <p>Create precise job descriptions instantly with JD Manager. Achieve business alignment and buy-in
-                  through collaborative processes.
-                  
-                </p>
+                <h2>Nudge</h2>
+                <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging
+                  insights from behavioral sciences, Nudge helps
+                  .</p>
               </div>
             </div>
           </div>
-          <div class="secondbox">
-            <div class="rightbox" style="margin-left: 70px;">
+          <div class="fifth">
+            <div class="rightbox">
               <img
                 src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
                 alt="Image 1">
               <div class="box-content">
-                <h2>JE Manager</h2>
-                <p>Streamline job leveling and grading with JE Manager. Build a fair and defensible job hierarchy while
-                  collaborating with business leaders for
-                  .
+                <h2>Advantage</h2>
+                <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively
+                  communicates your Employee Value Proposition.
                 </p>
-              </div>
-            </div>
-            <div class="rightbox" id="thirdcomp">
-              <img
-                src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
-                alt="Image 1">
-              <div class="box-content">
-                <h2>Comp 360</h2>
-                <p>Effortlessly manage merit cycles with Comp360. This tool allows you to build budget scenarios, obtain
-                  merit recommendations, and issue stunning.
-                 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="thirdbox">
-            <div class="third">
-              <div class="rightbox">
-                <img
-                  src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
-                  alt="Image 1">
-                <div class="box-content">
-                  <h2>Nudge</h2>
-                  <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging
-                    insights from behavioral sciences, Nudge helps
-                    .</p>
-                </div>
-              </div>
-            </div>
-            <div class="fifth">
-              <div class="rightbox">
-                <img
-                  src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
-                  alt="Image 1">
-                <div class="box-content">
-                  <h2>Advantage</h2>
-                  <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively
-                    communicates your Employee Value Proposition.
-                    </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-   
+    </div>
+
   </div>
 </body>
 
