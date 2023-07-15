@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Design with Sidebar</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins";
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      position: relative;
+    }
+
+    .sidebar {
+      min-width: 240px;
+      background-color: hwb(182 82% 7% / 0.544);
+      padding: 20px;
+      position: fixed;
+      height: 100vh;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .box {
+      height: 100px;
+      margin-bottom: 35px;
+      background-color: #fff;
+      border-radius: 15px;
+      display: flex;
+      gap: 18px;
+      padding: 15px 0px 15px 8px;
+      flex-direction: column;
+      border: 1px solid #007c84;
+    }
+
+    .box h1 {
+      font-size: 24px;
+    }
+
+    .box p {
+      color: #007c84;
+    }
+
+    .demo-button {
+      width: 100%;
+      background-color: #007c84;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 20px;
+      position: relative;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .demo-button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .demo-icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .demo-icons span {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .mail {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .mail span {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .mail a {
+      color: #007c84;
+      text-decoration: none;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .left-section {
+      flex-grow: 1;
+    }
+
+    .sub-heading {
+      display: flex;
+      gap: 10px;
+    }
+
+    .left-section h1 {
+      font-size: 35px;
+      color: #007c84;
+    }
+
+    .left-section .line {
+      width: 208px;
+      height: 1px;
+      background-color: #007c84;
+      margin: 10px 0;
+    }
+
+    .left-section h6 {
+      font-size: 14px;
+      color: #007c84;
+    }
+
+    .right-section {
+      justify-content: space-around;
+    }
+
+    .right-section img {
+      height: 70px;
+      object-fit: cover;
+    }
+
+    .masonry {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0px 65px;
+    }
+
+    .rightbox {
+      width: 300px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      border-radius: 15px;
+    }
+
+    .rightbox img {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .box-content {
+      height: 50%;
+      padding: 10px;
+    }
+
+    .box-content h2 {
+      color: #000;
+      font-family: "";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -0.352px;
+    }
+
+    .box-content p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .first {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .secondbox {
+      position: relative;
+      top: 39px;
+    }
+
+    .thirdbox {
+      position: relative;
+      top: 80px;
+    }
+
+    .accordion {
+      margin-top: 20px;
+    }
+
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+
+    .accordion-item .accordion-title {
+      background-color: #007c84;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .accordion-item .accordion-content {
+      padding: 10px 20px;
+      display: none;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="boxes">
+        <div class="box">
+          <h1>01</h1>
+          <p><strong>GO LIVE NOW</strong></p>
+        </div>
+        <div class="box">
+          <h1>02</h1>
+          <p><strong>MAKE AN IMPACT!</strong></p>
+        </div>
+        <div class="box">
+          <h1>03</h1>
+          <p><strong>BE ON BUDGET!</strong></p>
+        </div>
+      </div>
+      <div class="demo-button">
+        <img src="button-icon-demo.png" alt="Demo Button" />
+        <span>Demo</span>
+      </div>
+      <div class="demo-button">
+        <img src="button-icon-free-trial.png" alt="Free Trial Button" />
+        <span>Free Trial</span>
+      </div>
+      <div class="demo-icons">
+        <span class="icon"><i class="fa fa-facebook"></i></span>
+        <span class="icon"><i class="fa fa-twitter"></i></span>
+        <span class="icon"><i class="fa fa-instagram"></i></span>
+        <span class="icon"><i class="fa fa-linkedin"></i></span>
+      </div>
+      <div class="mail">
+        <span class="icon"><i class="fa fa-envelope"></i></span>
+        <a href="mailto:hello@rewardsdna.com">hello@rewardsdna.com</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="header">
+        <div class="left-section">
+          <div class="sub-heading">
+            <h6>Responsive Preview</h6>
+            <div class="line"></div>
+          </div>
+          <h1>Make this use appropriate button image tag on content side, make an accordion.</h1>
+        </div>
+        <div class="right-section">
+          <img src="logo.png" alt="Logo" />
+          <img src="avatar.png" alt="Avatar" />
+        </div>
+      </div>
+      <div class="masonry">
+        <div class="rightbox">
+          <img src="image1.png" alt="Image 1" />
+          <div class="box-content">
+            <h2>Title 1</h2>
+            <p>Description 1</p>
+          </div>
+        </div>
+        <div class="rightbox">
+          <img src="image2.png" alt="Image 2" />
+          <div class="box-content">
+            <h2>Title 2</h2>
+            <p>Description 2</p>
+          </div>
+        </div>
+        <div class="rightbox">
+          <img src="image3.png" alt="Image 3" />
+          <div class="box-content">
+            <h2>Title 3</h2>
+            <p>Description 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-title">Accordion Item 1</div>
+          <div class="accordion-content">
+            <p>This is the content of Accordion Item 1.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Accordion Item 2</div>
+          <div class="accordion-content">
+            <p>This is the content of Accordion Item 2.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-title">Accordion Item 3</div>
+          <div class="accordion-content">
+            <p>This is the content of Accordion Item 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    function toggleAccordion() {
+      this.classList.toggle("active");
+      const accordionContent = this.querySelector(".accordion-content");
+      if (accordionContent.style.display === "block") {
+        accordionContent.style.display = "none";
+      } else {
+        accordionContent.style.display = "block";
+      }
+    }
+
+    accordionItems.forEach((item) =>
+      item.addEventListener("click", toggleAccordion)
+    );
+  </script>
+</body>
+</html>
