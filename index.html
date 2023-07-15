@@ -46,7 +46,8 @@ justify-content: space-evenly;
       flex-direction: column;
       width: 100%;
       padding-top: 14px;
-
+position: relative;
+top: 40px;
     }
 
     .box {
@@ -256,7 +257,29 @@ justify-content: space-evenly;
 
 
     }
+    .button-read{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .box-content {
+  position: relative; /* Add positioning */
+}
 
+.button-read button {
+  display: none; /* Hide the button by default */
+  border-radius: 10px;
+  background: linear-gradient(#10E6F3, #007C84);
+  color: #FFF;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.rightbox:hover{
+  cursor: pointer;
+}
+.rightbox:hover .button-read button {
+  display: block; /* Show the button on hover */
+}
     /* #thirdcomp{
       position: relative;
       right: 60px;
@@ -350,6 +373,9 @@ justify-content: space-evenly;
                 through collaborative processes.
 
               </p>
+             <div class="button-read">
+              <button>Read more</button>
+             </div>
             </div>
           </div>
         </div>
@@ -364,6 +390,9 @@ justify-content: space-evenly;
                 collaborating with business leaders for
                 .
               </p>
+              <div class="button-read">
+                <button>Read more</button>
+               </div>
             </div>
           </div>
           <div class="rightbox" id="thirdcomp">
@@ -376,6 +405,9 @@ justify-content: space-evenly;
                 merit recommendations, and issue stunning.
 
               </p>
+              <div class="button-read">
+                <button>Read more</button>
+               </div>
             </div>
           </div>
         </div>
@@ -390,6 +422,9 @@ justify-content: space-evenly;
                 <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging
                   insights from behavioral sciences, Nudge helps
                   .</p>
+                  <div class="button-read">
+                    <button>Read more</button>
+                   </div>
               </div>
             </div>
           </div>
@@ -403,6 +438,9 @@ justify-content: space-evenly;
                 <p>Significantly improve offer acceptance rates and retention with Advantage. This tool effectively
                   communicates your Employee Value Proposition.
                 </p>
+                <div class="button-read">
+                  <button>Read more</button>
+                 </div>
               </div>
             </div>
           </div>
