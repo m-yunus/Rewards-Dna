@@ -4,289 +4,9 @@
 <head>
   <title>Rewards Dna</title>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Poppins";
-      height: 100%;
-    }
-
-    .container {
-      display: flex;
-      min-height: 100vh;
-
-    }
-
-    .sidebar {
-      min-width: 240px;;
-      padding: 20px;
-      min-height: 100vh;
-     
-      border-radius: 20px 12px 12px 20px;
-background:  #EAF3F4;
-box-shadow: 6px 6px 40px 0px rgb(0 118 135 / 19%), 4px 4px 10px 0px rgba(0, 118, 135, 0.05);
-
-display: flex;
-flex-direction: column;
-
-justify-content: space-evenly;
-    }
-
-    .logo {
-      margin-bottom: 20px;
-    }
-
-    .boxes {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-top: 14px;
-position: relative;
-top: 40px;
-    }
-
-    .box {
-      height: 100px;
-      margin-bottom: 35px;
-
-      border-radius: 12px;
-      display: flex;
-      gap: 18px;
-      padding: 15px 0px 15px 8px;
-      flex-direction: column;
-      border: 1px solid #007c84;
-
-
-      background: rgba(255, 255, 255, 0.40);
-
-    }
-
-    .box h1 {
-      font-size: 24px;
-    }
-
-    .box p {
-      color: #007c84;
-    }
-
-    .demo-button {
-
-      width: 100%;
-
-      padding: 20px;
-      border-radius: 5px;
-      text-align: center;
-      display: flex;
-      color: #fff;
-      font-weight: bold;
-      margin-top: 20px;
-      position: relative;
-      justify-content: space-around;
-      align-items: center;
-      border-radius: 12px;
-      background: #007C84;
-      /* Shadow 01 */
-      box-shadow: 0px 0.5152338743209839px 12.122506141662598px 0px rgba(0, 124, 132, 0.04), 0px 1.3030651807785034px 21.820842742919922px 0px rgba(0, 124, 132, 0.06), 0px 2.658130645751953px 30.16338348388672px 0px rgba(0, 124, 132, 0.07), 0px 5.475246906280518px 40.91319274902344px 0px rgba(0, 124, 132, 0.09), 0px 15px 80px 0px rgba(0, 124, 132, 0.13);
-
-
-    }
-
-    .demo-button i {
-      margin-left: 5px;
-    }
-
-    .demo-icons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-
-    .demo-icons span {
-      background-color: #F5FAFA;
-      border-radius: 50%;
-      padding: 5px;
-    }
-
-    .mail {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-      align-items: center;
-    }
-
-    .mail span {
-      border-radius: 50%;
-      background: #F5FAFA;
-      padding: 5px;
-
-    }
-
-    .mail a {
-      color: #007c84;
-      text-decoration: none;
-    }
-
-    .content {
-      width: 100%;
-      height: 100%;
-
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 40px;
-
-      width: 100%;
-    }
-
-    .left-section {
-      flex-grow: 1;
-    }
-
-    .sub-heading {
-      display: flex;
-      gap: 10px;
-    }
-
-    .left-section h1 {
-      font-size: 35px;
-      color: #007c84;
-    }
-
-    .left-section .line {
-      width: 208px;
-      height: 1px;
-      background-color: #007c84;
-      margin: 10px 0;
-    }
-
-    .left-section h6 {
-      font-size: 14px;
-      color: #007c84;
-
-    }
-
-    .right-section {
-      justify-content: space-around;
-    }
-
-    .right-section img {
-      height: 70px;
-      object-fit: cover;
-    }
-
-    .masonry {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding: 50px 65px 0px 50px;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-
-    .rightbox {
-      width: 300px;
-
-      margin-bottom: 20px;
-
-      border-radius: 16px;
-      background: #FFF;
-      box-shadow: 0px 1px 8px 0px rgb(89 89 89 / 21%);
-    }
-
-    .rightbox img {
-      height: 130px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 15px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .box-content {
-      height: 50%;
-      padding: 10px;
-    }
-
-    .box-content h2 {
-      color: #038B94;
-      text-align: justify;
-      padding: 5px 15px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 20px;
-      /* 100% */
-    }
-
-    .box-content p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-
-    }
-
-    .first {
-      height: 100%;
-      display: flex;
-
-      bottom: 40px;
-    }
-
-    .secondbox {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .thirdbox {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .fifth {
-
-      position: relative;
-      right: 45px;
-
-
-    }
-    .button-read{
-      display: flex;
-      justify-content: flex-end;
-    }
-    .box-content {
-  position: relative; /* Add positioning */
-}
-
-.button-read button {
-  display: none; /* Hide the button by default */
-  border-radius: 10px;
-  background: linear-gradient(#10E6F3, #007C84);
-  color: #FFF;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-}
-.rightbox:hover{
-  cursor: pointer;
-}
-.rightbox:hover .button-read button {
-  display: block; /* Show the button on hover */
-}
-    /* #thirdcomp{
-      position: relative;
-      right: 60px;
-      top: 44px;
-    } */
-  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -294,7 +14,7 @@ top: 40px;
 
 
 
-    <div class="sidebar">
+    <div class="sidebar ">
       <div class="boxes">
         <div class="box">
           <h1>01</h1>
@@ -335,22 +55,45 @@ top: 40px;
           </svg></i>
         </div>
       </div>
-      
-      
+
+
       <div class="mail">
         <span><img src="email.png" alt="" style="height: 12px;"></span>
         <a href="mailto:hello@rewarsdna.com">hello@rewarsdna.com</a>
       </div>
+      <!-- Modal container -->
+      
       <div class="demo-icons">
-        <span><img src="address.png" alt="" style="height: 18px;"></span>
+
+        <div id="myModal" class="modal">
+          <div class="modal-image">
+            <span> <img src="remove.png" alt="Icon"></span>
+  
+          </div>
+  
+          <div class="modal-content">
+            <p>Birmingham, West Midlands</p>
+            <!-- Modal content goes here -->
+          </div>
+        </div>
+
+        <span onclick="Add()" style="cursor: pointer;"><img src="address.png" alt="" style="height: 18px;"></span>
         <span><img src="insurance.png" alt="" style="height: 18px;"></span>
         <span><img src="info.png" alt="" style="height: 18px;"></span>
-        <span><img src="question.png" alt="" style="height: 18px;"></span>
+        <span onclick="Showfaq()" style="cursor: pointer;">
+          <img src="question.png" alt="" style="height: 18px;">
+        </span>
       </div>
     </div>
     <div class="content">
       <div class="header">
+        <div class="hamburger-menu" onclick="ShowSide()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
         <div class="left-section">
+         
           <h1>Compensation Tools</h1>
           <div class="sub-heading">
             <div class="line"></div>
@@ -373,14 +116,14 @@ top: 40px;
                 through collaborative processes.
 
               </p>
-             <div class="button-read">
-              <button>Read more</button>
-             </div>
+              <div class="button-read">
+                <button>Read more</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="secondbox">
-          <div class="rightbox" style="margin-left: 70px;">
+          <div class="rightbox" id="second">
             <img
               src="young-handsome-man-glasses-showing-advertisement-smiling-pointing-fingers-left-making-announcement-standing-against-blue-background.jpg"
               alt="Image 1">
@@ -392,7 +135,7 @@ top: 40px;
               </p>
               <div class="button-read">
                 <button>Read more</button>
-               </div>
+              </div>
             </div>
           </div>
           <div class="rightbox" id="thirdcomp">
@@ -407,7 +150,7 @@ top: 40px;
               </p>
               <div class="button-read">
                 <button>Read more</button>
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -422,9 +165,9 @@ top: 40px;
                 <p>Empower your sales team to achieve their targets more easily than ever with Nudge. Leveraging
                   insights from behavioral sciences, Nudge helps
                   .</p>
-                  <div class="button-read">
-                    <button>Read more</button>
-                   </div>
+                <div class="button-read">
+                  <button>Read more</button>
+                </div>
               </div>
             </div>
           </div>
@@ -440,15 +183,110 @@ top: 40px;
                 </p>
                 <div class="button-read">
                   <button>Read more</button>
-                 </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      
+      <div class="faqcontainer" id="faqcontainer">
+        <h1>FAQ </h1>
+        <div class="accordion" onclick="toggleAccordion(this)" style="margin-top: 30px;">Who are you folks?</div>
+        <div class="panel">
+          <p>We are passionate HR entrepreneurs driven by a desire to help you achieve precise people outcomes efficiently through technology.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">What is special about your tools?</div>
+        <div class="panel">
+          <p>Sint eveniet iste magni ipsa ab voluptates voluptas reiciendis tenetur laborum vero sunt soluta
+            perferendis, dolores quasi quia architecto provident odit blanditiis saepe, quibusdam corrupti asperiores
+            eos? Explicabo, officiis, sapiente.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">Are your products safe and reliable?</div>
+        <div class="panel">
+          <p>Distinctio commodi ipsum dignissimos tenetur? Quo cumque eos earum incidunt. <br />Eveniet odio commodi
+            dolore, magni doloremque, voluptates porro qui. <br /><br />Ullam itaque, laboriosam iste debitis at, nulla
+            perferendis. Explicabo, animi, voluptatibus.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">Can I get a free trial?</div>
+        <div class="panel">
+          <p>Tempora consequuntur ex culpa, quae iusto ab fuga porro repudiandae doloribus, distinctio enim molestiae,
+            laborum officia facilis, illum deserunt id dolore corrupti. Repellat quas impedit veniam, ipsum officiis,
+            blanditiis accusamus.</p>
+        </div>
+
+
+
+
+      </div>
+
     </div>
 
   </div>
+  <script>
+    // Get the modal container
+    const modal = document.getElementById("myModal");
+ const faqcontainer=document.getElementsByClassName("faqcontainer")
+    // Get the icon elements
+    const icons = document.querySelectorAll(".demo-icons span");
+
+    // Get the cancel button
+    const cancelButton = document.querySelector(".modal button");
+    function Add() {
+      // Add event listeners to the icons
+      icons.forEach((icon) => {
+        icon.addEventListener("click", () => {
+          // Show the modal
+          modal.style.display = "block";
+        });
+      });
+
+    }
+
+    // Add event listener to the cancel button
+    cancelButton.addEventListener("click", () => {
+      // Hide the modal
+      modal.style.display = "none";
+    });
+  function Showfaq() {
+      var masonry = document.querySelector(".masonry");
+      var faqContainer = document.getElementById("faqcontainer");
+
+      masonry.style.display = "none";
+      faqContainer.style.display = "block";
+    }
+ 
+    function toggleAccordion(accordion) {
+      accordion.classList.toggle("active");
+      var panel = accordion.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    }
+    function ShowSide(){
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const sidebar = document.querySelector(".sidebar");
+
+  hamburgerMenu.addEventListener("click", () => {
+    sidebar.style.display="block"
+  });
+  document.addEventListener("click", (event) => {
+  const targetElement = event.target;
+  
+  // Check if the clicked element is outside the sidebar
+  if (!targetElement.closest(".sidebar") && !targetElement.closest(".hamburger-menu")) {
+    sidebar.style.display = "none";
+  }
+});
+    }
+  
+  </script>
 </body>
 
 </html>
